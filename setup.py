@@ -2,7 +2,7 @@
 Greeting
 """
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 setup(
@@ -13,7 +13,7 @@ setup(
         'Intended Audience :: Developers',
         'Programming Language :: Python :: 3.5',
     ],
-    packages=find_packages(),
+    packages=['greeting'],
     entry_points={
         'console_scripts': [
             'greeting=greeting.greeting:greeting',
